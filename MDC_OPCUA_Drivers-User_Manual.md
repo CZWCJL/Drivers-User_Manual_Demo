@@ -61,7 +61,7 @@ Edge嵌入式软件的版本迭代和功能描述不会立即反映在本手册�
 * 硬件连接实物图
 如下图所示，Q06HCPU与EdgePLUS通过USB线缆建立物理连接。
 
-<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731134611206.png" alt="image-20200731134611206" style="zoom: 50%;" />
+<img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731134611206.png" alt="image-20200731134611206" style="zoom: 50%;" />
 
 
 
@@ -69,34 +69,34 @@ Edge嵌入式软件的版本迭代和功能描述不会立即反映在本手册�
 * 选择 _三菱Melsec.USB通讯_  
 * 勾选 _内部驱动标签_ ，点击确认
 * _连接名称_ 更名为 __MelsecUSB__
-    ![image-20200729101118992](MDC_OPCUA_Drivers-User_Manual.assets\image-20200729101118992.png)
+    ![image-20200729101118992](MDC_OPCUA_Drivers-User_Manual.assets/image-20200729101118992.png)
 * 配置USB接口
 * 如图示，选择图示位置 _驱动参数_  _设备位置_  __功能按钮__
-    ![image-20200729101416160](MDC_OPCUA_Drivers-User_Manual.assets\image-20200729101416160.png)
+    ![image-20200729101416160](MDC_OPCUA_Drivers-User_Manual.assets/image-20200729101416160.png)
 * 点击 __更新__，展开列表，可显示当前已连接至EdgePLUS并识别的PLC
 * 点击图示 MITSUBISHI ，单击 **确定** ，即可自动适应并完成USB配置
-     <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200729102040754.png" alt="image-20200729102040754" style="zoom: 67%;" />
+     <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200729102040754.png" alt="image-20200729102040754" style="zoom: 67%;" />
 #### USB可扩展功能
 
 EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器，实现对多个PLC访问。
 
-<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731170203188.png" alt="image-20200731170203188" style="zoom:50%;" />
+<img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731170203188.png" alt="image-20200731170203188" style="zoom:50%;" />
 
 #### 配置标签采集指定变量
 * 新建1个标签
 
-    <img src="MDC_OPCUA_Drivers-User_Manual.assets\屏幕截图(577).png" alt="屏幕截图(577)" style="zoom:67%;" />
+    <img src="MDC_OPCUA_Drivers-User_Manual.assets/屏幕截图(577).png" alt="屏幕截图(577)" style="zoom:67%;" />
 * 欲读取PLC中的D0，将_标签名称_手动输入为__D0__
 * 选择_数据类型_为__有符号16位整数__
 * 在弹出框中保持如图所示配置
   * 数据区域 **数据寄存器|D**
   * 参考地址 **0** ==（输入框的数值进制为十进制）==
   * 勾选**写值使能** ，对PLC允许写入的软元件可通过EdgePLUS的OPCUA服务实现写值。
-    ![image-20200729141804153](MDC_OPCUA_Drivers-User_Manual.assets\image-20200729141804153.png)
+    ![image-20200729141804153](MDC_OPCUA_Drivers-User_Manual.assets/image-20200729141804153.png)
 * 依次点击**项目** **下载模块配置** ，即可将当前配置烧写进模块
-       <img src="MDC_OPCUA_Drivers-User_Manual.assets\屏幕截图(579).png" alt="屏幕截图(579)" style="zoom:75%;" />
+       <img src="MDC_OPCUA_Drivers-User_Manual.assets/屏幕截图(579).png" alt="屏幕截图(579)" style="zoom:75%;" />
 * 依次操作如图所示步骤，找到进程列表中的MDC_OPCUA_SERVER进程并鼠标左键双击，点击**重启进程**，待进程重启完成后本次配置生效
-      ![image-20200729171750016](MDC_OPCUA_Drivers-User_Manual.assets\image-20200729171750016.png)
+      ![image-20200729171750016](MDC_OPCUA_Drivers-User_Manual.assets/image-20200729171750016.png)
   
 * 至此，EdgePLUS可通过MelsecUSB读写PLC中的D0。
 
@@ -109,10 +109,10 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 #### 硬件连接及通讯参数配置
 
 * 硬件连接实物图
-<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731141227762.png" alt="image-20200731141227762" style="zoom: 50%;" />
+<img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731141227762.png" alt="image-20200731141227762" style="zoom: 50%;" />
   * 本例使用了EdgePLUS的COM1（多模式串口）
 * PC通过GX Works2 对PLC编程的端口配置
-<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731142232850.png" alt="image-20200731142232850" style="zoom:50%;" />
+<img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731142232850.png" alt="image-20200731142232850" style="zoom:50%;" />
 * 使用EdgePLUS的COM1（多模式串口）采集PLC数据的端口配置参数应与上图一致。
 
 | Options    | Value      | Remark |
@@ -124,9 +124,9 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 
 
 
- <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731141911032.png" alt="image-20200731141911032" style="zoom: 50%;" />
+ <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731141911032.png" alt="image-20200731141911032" style="zoom: 50%;" />
 * 配置Melsec4C驱动选择COM1
-  <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731141534425.png" alt="image-20200731141534425" style="zoom: 50%;" />
+  <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731141534425.png" alt="image-20200731141534425" style="zoom: 50%;" />
 
 
 * 至此，Melsec4C通讯配置完成，标签配置请参照前文**MelsecUSB**->**配置标签采集指定变量**
@@ -140,7 +140,7 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 
 * 硬件连接实物图
 
-  <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731154026816.png" alt="image-20200731154026816" style="zoom:50%;" />
+  <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731154026816.png" alt="image-20200731154026816" style="zoom:50%;" />
   
     * PLC的以太网模块通过网线与EdgePLUS的Eth1建立物理连接
 * 通讯参数
@@ -155,8 +155,8 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
   | 协议     | TCP              | 推荐设置                       |
   | 打开方式 | MELSOFT连接      | 推荐设置                       |
   
-  <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731154911645.png" alt="image-20200731154911645" style="zoom:50%;" />
-  <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731160153843.png" alt="image-20200731160153843" style="zoom:50%;" />
+  <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731154911645.png" alt="image-20200731154911645" style="zoom:50%;" />
+  <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731160153843.png" alt="image-20200731160153843" style="zoom:50%;" />
   
   * EdgePLUS应保持的配置参数
   | Options  | Value         | Remark                             |
@@ -167,7 +167,7 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
   | IO编号   | FF.03         | 通讯协议默认                       |
   | 站编号   | 02            | EdgePLUS的站号，此处的进制为16进制 |
 
-<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731161058922.png" alt="image-20200731161058922" style="zoom:50%;" />
+<img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731161058922.png" alt="image-20200731161058922" style="zoom:50%;" />
 * 至此，Melsec3E通讯配置完成，标签配置请参照前文**MelsecUSB**->**配置标签采集指定变量**
 
 
@@ -175,14 +175,14 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 #### 硬件连接及通讯参数配置
 * 硬件连接实物图
 
-  <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731154026816.png" alt="image-20200731154026816" style="zoom:50%;" />
+  <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731154026816.png" alt="image-20200731154026816" style="zoom:50%;" />
 
 * 通讯参数配置
   | Options | Value         | Remark                 |
   | ------- | ------------- | ---------------------- |
   | IP地址  | 192.168.1.101 | 即PLC的以太网模块地址  |
   | PLC编号 | FF            | 通讯协议规定的固定参数 |
-<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200731163155044.png" alt="image-20200731163155044" style="zoom:50%;" />
+<img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731163155044.png" alt="image-20200731163155044" style="zoom:50%;" />
 
 * 至此，Melsec1E通讯配置完成，标签配置请参照前文**MelsecUSB**->**配置标签采集指定变量**
 
@@ -193,13 +193,13 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 #### 1.通过QnA兼容3E/3C/4C/4E帧通信
 
 * 基本型CPU
-* ![image-20200803092354427](MDC_OPCUA_Drivers-User_Manual.assets\image-20200803092354427.png)
+* ![image-20200803092354427](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092354427.png)
 * 高性能型QCPU、过程CPU、冗余CPU、QnACPU
-* ![image-20200803092446486](MDC_OPCUA_Drivers-User_Manual.assets\image-20200803092446486.png)
+* ![image-20200803092446486](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092446486.png)
 * 通用型QCPU、LCPU
-* ![image-20200803092520473](MDC_OPCUA_Drivers-User_Manual.assets\image-20200803092520473.png)
+* ![image-20200803092520473](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092520473.png)
 * 安全CPU
-* ![image-20200803092552317](MDC_OPCUA_Drivers-User_Manual.assets\image-20200803092552317.png)
+* ![image-20200803092552317](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092552317.png)
 
 
 
@@ -207,12 +207,12 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 
 * 软元件列表(无限制CPU 模块)
 
-![image-20200803092854532](MDC_OPCUA_Drivers-User_Manual.assets\image-20200803092854532.png)
+![image-20200803092854532](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092854532.png)
 
-![image-20200803092932258](MDC_OPCUA_Drivers-User_Manual.assets\image-20200803092932258.png)
+![image-20200803092932258](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092932258.png)
 
 * 软元件列表(带限制CPU 模块)
-* ![image-20200803093024416](MDC_OPCUA_Drivers-User_Manual.assets\image-20200803093024416.png)
+* ![image-20200803093024416](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803093024416.png)
 
 # FAQ
 
