@@ -162,6 +162,7 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
   <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731160153843.png" alt="image-20200731160153843" style="zoom:50%;" />
   
   * EdgePLUS应保持的配置参数
+  
   | Options  | Value         | Remark                             |
   | -------- | ------------- | ---------------------------------- |
   | IP地址   | 192.168.1.101 | 即PLC的以太网模块地址              |
@@ -181,10 +182,12 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
   <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731154026816.png" alt="image-20200731154026816" style="zoom:50%;" />
 
 * 通讯参数配置
+
   | Options | Value         | Remark                 |
   | ------- | ------------- | ---------------------- |
   | IP地址  | 192.168.1.101 | 即PLC的以太网模块地址  |
   | PLC编号 | FF            | 通讯协议规定的固定参数 |
+  
 <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731163155044.png" alt="image-20200731163155044" style="zoom:50%;" />
 
 * 至此，Melsec1E通讯配置完成，标签配置请参照前文**MelsecUSB**->**配置标签采集指定变量**
