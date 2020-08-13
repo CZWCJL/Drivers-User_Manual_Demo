@@ -97,7 +97,7 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
   * 勾选**写值使能** ，对PLC允许写入的软元件可通过EdgePLUS的OPCUA服务实现写值。
     ![image-20200729141804153](MDC_OPCUA_Drivers-User_Manual.assets/image-20200729141804153.png)
 * 依次点击**项目** **下载模块配置** ，即可将当前配置烧写进模块
-       <img src="MDC_OPCUA_Drivers-User_Manual.assets/屏幕截图(579).png" alt="屏幕截图(579)" style="zoom:75%;" />
+     <img src="MDC_OPCUA_Drivers-User_Manual.assets/屏幕截图(579).png" alt="屏幕截图(579)" style="zoom:75%;" />
 * 依次操作如图所示步骤，找到进程列表中的MDC_OPCUA_SERVER进程并鼠标左键双击，点击**重启进程**，待进程重启完成后本次配置生效
       ![image-20200729171750016](MDC_OPCUA_Drivers-User_Manual.assets/image-20200729171750016.png)
   
@@ -180,6 +180,7 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
   | 站编号   | 02            | EdgePLUS的站号，此处输入框数据的进制为16进制 |
 
 <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200731161058922.png" alt="image-20200731161058922" style="zoom:50%;" />
+
 * 至此，Melsec3E通讯配置完成，标签配置请参照前文**MelsecUSB**->**配置标签采集指定变量**
 
 ##### 例2，PLC IP：192.168.10.222/24
