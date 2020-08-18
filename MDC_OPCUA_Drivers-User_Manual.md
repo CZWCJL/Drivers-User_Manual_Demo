@@ -8,7 +8,7 @@ SCAEdge驱动使用手册\__Beta_
 | -------- | ------------------------ |
 | 发布者   | IIOT物联网部门          |
 | 发布日期 | Aug/2020    |
-| 发布版本 | V1.0                     |
+| 发布版本 | V1.5                    |
 | 公司网址 | www.scapeak.com          |
 <div STYLE="page-break-after: always;"></div>
 
@@ -139,7 +139,10 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 
 
 ### Melsec3E
-#### 硬件连接及通讯参数配置
+
+#### 通过QJ71E71-100 以太网模块进行3E帧通讯
+
+##### 硬件连接及通讯参数配置
 
 * 硬件连接实物图
 
@@ -147,7 +150,7 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
   
     * PLC的以太网模块通过网线与EdgePLUS的Eth1建立物理连接
 
-##### 例1，PLC IP：192.168.1.101/24
+###### 例1，PLC IP：192.168.1.101/24
 
 * 通讯参数
   * 本例PLC的以太网模块相关配置参数
@@ -183,7 +186,7 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 
 * 至此，Melsec3E通讯配置完成，标签配置请参照前文**MelsecUSB**->**配置标签采集指定变量**
 
-##### 例2，PLC IP：192.168.10.222/24
+###### 例2，PLC IP：192.168.10.222/24
 
 * 通讯参数
   * 本例PLC的以太网模块相关配置参数
@@ -213,6 +216,44 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 <img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200813094605764.png" alt="image-20200813094605764" style="zoom:50%;" />
 
 * 至此，Melsec3E通讯配置完成，标签配置请参照前文**MelsecUSB**->**配置标签采集指定变量**
+
+#### 通过内置以太网口进行3E帧通讯
+
+* 说明
+
+本驱动适用的PLC若选用内置以太网口进行3E通讯，由于其上位机软件无“站号”等相关参数配置选项，请根据目标PLC通讯协议设定。
+
+* 硬件连接实物图
+
+略
+
+* 本例PLC的应保持的配置
+
+| Options    | Value      | Remark |
+| ---------- | ---------- | ------ |
+| IP地址  | 192.168.1.130 | 自定义 |
+| 协议 | TCP    |        |
+| 打开方式   | MC协议    |  |
+| 本站端口号  | 5200    | 自定义 |
+
+
+
+<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200818164200127.png" alt="image-20200818164200127" style="zoom:50%;" />
+
+<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200818164051664.png" alt="image-20200818164051664" style="zoom:50%;" />
+
+* EdgePLUS应保持的配置参数
+
+| Options  | Value         | Remark                    |
+| -------- | ------------- | ------------------------- |
+| IP地址   | 192.168.1.130 | 即PLC的内置以太网口IP地址 |
+| 网络编号 | 00            | 推荐缺省值                |
+| PLC编号  | FF            | 推荐缺省值                |
+| IO编号   | FF.03         | 通讯协议默认              |
+| 站编号   | 00            | 推荐缺省值                |
+
+<img src="MDC_OPCUA_Drivers-User_Manual.assets\image-20200818164703221.png" alt="image-20200818164703221" style="zoom:50%;" />
+
 
 ### Melsec1E
 #### 硬件连接及通讯参数配置
