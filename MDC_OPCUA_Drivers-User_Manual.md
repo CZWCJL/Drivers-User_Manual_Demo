@@ -280,13 +280,20 @@ EdgePLUS的USB驱动支持USB集线器，因此用户可通过外接USB集线器
 #### 1.通过QnA兼容3E/3C/4C/4E帧通信
 
 * 基本型CPU
-* ![image-20200803092354427](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092354427.png)
+
+ <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092354427.png" alt="image-20200803092354427" style="zoom:67%;" />
+
 * 高性能型QCPU、过程CPU、冗余CPU、QnACPU
-* ![image-20200803092446486](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092446486.png)
+
+ <img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092446486.png" alt="image-20200803092446486" style="zoom:67%;" />
+
 * 通用型QCPU、LCPU
-* ![image-20200803092520473](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092520473.png)
+
+<img src="MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092520473.png" alt="image-20200803092520473"  />
+
 * 安全CPU
-* ![image-20200803092552317](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092552317.png)
+
+ ![image-20200803092552317](MDC_OPCUA_Drivers-User_Manual.assets/image-20200803092552317.png)
 
 
 
